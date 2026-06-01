@@ -170,6 +170,13 @@ button:hover {
 .op img {
     width: 300px;
     height: 300px;
+    border-radius: 8px;
+}
+
+.op img:hover {
+    width: 320px;
+    height: 320px;
+    border-radius: 8px;
 }
 
 .card3 {
@@ -477,4 +484,21 @@ a:active {
     color: white;
     margin-top: 2vh;
     cursor: pointer;
+}
+
+.sobre{
+    display: flex;
+    margin: 0px;
+
+}
+
+.sobre img{
+    width: 40px;
+    display: flex;
+    margin: 2vh;
+    padding-bottom: 10vh;
+}
+
+#icon-panela{
+    margin-top: 5vh;
 }

@@ -15,7 +15,9 @@
                 <a href="./index.html"><Img src="/Imagens/Logo.jfif" alt="logo"></a>
                 <article class="mainnav">
                     <ul class="li1">
-                        <a href="/marmitas.html"><li> Marmitas </li></a>
+                        <a href="/marmitas.html">
+                            <li> Marmitas </li>
+                        </a>
                         <li> Pães </li>
                         <li> Sobremesas</li>
                         <li> Contato</li>
@@ -35,9 +37,9 @@
                     <h1> Comida caseira feita com amor </h1>
                     <p> Marmitas, pães e sobremesas preparados diariamente com ingredientes selecionados. Sabor
                         autêntico que traz a cozinha para sua mesa. </p>
-                        <div class="button">
-                    <button> Cardápio </button>
-                    <button> Prato do dia </button>
+                    <div class="button">
+                        <a href="#cardapio"><button> Cardápio </button></a>
+                         <a href="/marmitas.html#prato-do-dia"><button> Prato do dia </button></a>
                     </div>
                 </article>
 
@@ -47,14 +49,14 @@
 
         <section class="card2">
             <div clsse="txt">
-                <h1>O que oferecemos</h1>
+                <h1 id="cardapio">O que oferecemos</h1>
                 <p>Cada prato é feito na hora, sem pressa, sem atalhos. Apenas comida boa como deve ser.</p>
             </div>
 
             <section class="ops">
 
                 <section class="op">
-                    <img src="https://picsum.photos/500" alt="">
+                    <a href="marmitas.html"><img src="https://picsum.photos/500" alt=""></a>
                     <div>
                         <h2>Marmitas completas</h2>
                         <p>Refeições balanceadas que saciam e nutrem o corpo.</p>
@@ -80,13 +82,20 @@
         <section class="card3">
             <section class="cardesc2">
                 <img src="https://picsum.photos/500" alt="">
-                <div>
-                    <h2> Comidasa fresca</h2>
-                    <p>Preparada todos os dias com cuidado e atenção aos detalhes que fazem diferença.</p>
-                    <h2>Ingredientes selecionados</h2>
-                    <p>Escolhidos com rigor para garantir qualidade e sabor em cada garfada.</p>
-                    <h2>Entrega rápida</h2>
-                    <p>Seu pedido chega quente e pronto para ser desfrutado sem demora.</p>
+                <div  class="sobre">
+                    <div class="icons">
+                        <img id="icon-panela" src="/Imagens/Icons/cooking_3711960.png" alt="Icone Panela">
+                        <img id="icon-cesta" src="/Imagens/Icons/food-basket_3711475.png" alt=" Icone Cesta">
+                        <img id="icon-relogio" src="/Imagens/Icons/clock_18414713.png" alt="Icone Relógio">
+                    </div>
+                    <div>
+                        <h2> Comida fresca</h2>
+                        <p>Preparada todos os dias com cuidado e atenção aos detalhes que fazem diferença.</p>
+                        <h2>Ingredientes selecionados</h2>
+                        <p>Escolhidos com rigor para garantir qualidade e sabor em cada garfada.</p>
+                        <h2>Entrega rápida</h2>
+                        <p>Seu pedido chega quente e pronto para ser desfrutado sem demora.</p>
+                    </div>
                 </div>
             </section>
         </section>
@@ -155,9 +164,9 @@
             </div>
         </section>
     </main>
-    <footer class="card-rodape"> 
+    <footer class="card-rodape">
         <div class="card7">
-        <img src="/Imagens/Logo.jfif" alt="">
+            <img src="/Imagens/Logo.jfif" alt="">
             <div class="op1">
                 <h1> Cardápio </h1>
                 <p> Marmitas </p>
@@ -174,7 +183,7 @@
         </div>
         <hr>
         <div class="direitos">
-        <p>© 2026 Marmitaria da Ju. Todos os direitos reservados.</p>
+            <p>© 2026 Marmitaria da Ju. Todos os direitos reservados.</p>
         </div>
     </footer>
 </body>
