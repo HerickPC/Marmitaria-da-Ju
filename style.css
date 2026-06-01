@@ -54,7 +54,7 @@ ul {
     list-style-type: none;
 }
 
-.li1{
+.li1 {
     cursor: pointer;
 }
 
@@ -172,10 +172,6 @@ button:hover {
     height: 300px;
 }
 
-.txt {
-    margin: 500px;
-}
-
 .card3 {
     background-color: #575418;
 }
@@ -244,7 +240,7 @@ button:hover {
     text-align: center;
 }
 
-.tel{
+.tel {
     text-decoration-line: underline;
 }
 
@@ -278,15 +274,31 @@ button:hover {
     opacity: 0.7;
 }
 
-.card7{
-    background-color: #9A6829;
-    height: 320px;
+.card-rodape{
     display: flex;
-    justify-content:space-evenly;
+    flex-direction: column;
+   background-color: #9A6829;
+}
+
+.direitos{
+    color: white;
+    align-self: center;
+    margin-top: 0;
+    margin-bottom: 5vh;
+}
+
+hr{
+    width: 800px;
+}
+
+.card7 {
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
     color: white;
 }
 
-.card7 .op1{
+.card7 .op1 {
     margin: 5vh;
 }
 
@@ -306,4 +318,163 @@ button:hover {
 .op1 img {
     width: 300px;
     height: 300px;
+}
+
+table {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+thead,
+tbody {
+    display: flex;
+}
+
+tr {
+    display: flex;
+    flex-direction: column;
+}
+
+th,
+td {
+    box-sizing: border-box;
+    height: 40px;
+    padding: 20px;
+    padding-top: 5px;
+    text-align: center;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: black;
+    text-decoration: none;
+}
+
+#botao_marmitas_1 {
+    width: 130px;
+    height: 50px;
+    border: 1px black solid;
+    border-radius: 5px;
+    background-color: transparent;
+    color: black;
+    margin-top: 2vh;
+    cursor: pointer;
+}
+
+#botao_marmitas_1:hover {
+    width: 130px;
+    height: 50px;
+    border: 1px black solid;
+    border-radius: 5px;
+    background-color: #C18234;
+    color: white;
+    margin-top: 2vh;
+    cursor: pointer;
+}
+
+.card2-2 {
+    margin: 12vh;
+    text-align: center;
+    padding: 0px;
+    background-color: #FCF1E4;
+}
+
+.cardesc-1 {
+    display: flex;
+    margin: 10vh;
+    border-radius: 10px;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.cardesc-1 h1 {
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 2vh;
+    margin: 7vh;
+}
+.cardesc-1 table {
+    color: white;
+    margin-bottom: 2vh;
+    margin: 7vh;
+}
+
+.cardesc-1 p {
+    color: white;
+    text-align: center;
+    margin: 7vh;
+    margin-bottom: 2vh;
+    margin-top: 0vh;
+    width: 250px;
+}
+.cardesc-1 img {
+    border-radius: 10px;
+    width: 500px;
+    margin: 5vh;
+}
+
+#botao_marmitas_2 {
+    width: 250px;
+    height: 50px;
+    border: 1px black solid;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    margin-top: 2vh;
+    cursor: pointer;
+    margin: 7vh;
+    margin-bottom: 5vh;
+}
+
+#botao_marmitas_2:hover {
+    width: 250px;
+    height: 50px;
+    border: 1px black solid;
+    border-radius: 5px;
+    background-color: #C18234;
+    color: white;
+    margin-top: 2vh;
+    cursor: pointer;
+    margin: 7vh;
+}
+
+.duvidas_marmitas {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: auto;
+    margin-top: 5vh;
+    width: 650px;
+    height: auto;
+}
+
+.txt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#botao-duvidas{
+    width: 150px;
+    height: 50px;
+    border: 1px black solid;
+    border-radius: 5px;
+    background-color: transparent;
+    color: black;
+    margin-top: 2vh;
+    cursor: pointer;
+}
+
+#botao-duvidas:hover{
+    width: 150px;
+    height: 50px;
+    border: 1px black solid;
+    border-radius: 5px;
+    background-color: #C18234;
+    color: white;
+    margin-top: 2vh;
+    cursor: pointer;
 }
