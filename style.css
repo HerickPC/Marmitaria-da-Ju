@@ -139,34 +139,9 @@ a:active {
     text-decoration: none;
 }
 
-
-button {
-    width: 130px;
-    height: 50px;
-    border: 1px black solid;
-    border-radius: 5px;
-    background-color: transparent;
-    color: white;
-    margin-top: 2vh;
-    cursor: pointer;
-}
-
-button:hover {
-    width: 130px;
-    height: 50px;
-    border: 1px black solid;
-    border-radius: 5px;
-    background-color: #C18234;
-    color: white;
-    margin-top: 2vh;
-    cursor: pointer;
-}
-
-
 .intro {
     display: flex;
     gap: 20px;
-
 }
 
 .intro a {
@@ -189,7 +164,7 @@ button:hover {
     color: white;
     margin-top: 2vh;
     cursor: pointer;
-
+    transition: all 0.3s ease;
 }
 
 .cardesc img {
@@ -225,6 +200,7 @@ button:hover {
     width: 320px;
     height: 320px;
     border-radius: 8px;
+    transition: all 0.3s ease;
 }
 
 .cardesc2 {
@@ -330,6 +306,7 @@ button:hover {
     color: whitesmoke;
     margin-top: 2vh;
     cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 .tel {
@@ -470,6 +447,7 @@ td {
     color: whitesmoke;
     margin-top: 2vh;
     cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 .card2-2 {
@@ -482,6 +460,7 @@ td {
     justify-content: center;
     text-align: center;
 }
+
 .card2-2 a{
     display: flex;
     flex-direction: column;
@@ -490,7 +469,14 @@ td {
     text-align: center;
 }
 
-.botao a{
+.botao{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.botao a {
     width: 130px;
     height: 50px;
     border: 1px black solid;
@@ -501,7 +487,7 @@ td {
     cursor: pointer;
 }
 
-.botao a:hover{
+.botao a:hover {
     width: 130px;
     height: 50px;
     border: 1px black solid;
@@ -510,37 +496,29 @@ td {
     color: whitesmoke;
     margin-top: 2vh;
     cursor: pointer;
+    transition: all 0.3s ease;
 }
 
-.cardesc-1 a{
-    width: 130px;
-    height: 50px;
-    border: 1px black solid;
-    border-radius: 5px;
-    background-color: transparent;
-    color: whitesmoke;
-    margin-top: 2vh;
-    cursor: pointer;
-}
-
-.cardesc-1 a:hover{
-    width: 130px;
-    height: 50px;
-    border: 1px black solid;
-    border-radius: 5px;
-    background-color: #C18234;
-    color: whitesmoke;
-    margin-top: 2vh;
-    cursor: pointer;
-}
-
-.cardesc-1 {
+.cardesc-1{
     display: flex;
     margin: 10vh;
     border-radius: 10px;
     align-items: center;
     border: 1px solid black;
+    justify-content: center;
+    text-align: center;
 }
+
+.cardesc-1 a{
+    display: flex;
+    margin: 10vh;
+    border-radius: 10px;
+    align-items: center;
+    border: 1px solid black;
+    justify-content: center;
+    text-align: center;
+}
+
 
 .cardesc-1 h1 {
     color: whitesmoke;
@@ -593,6 +571,7 @@ td {
     margin-top: 2vh;
     cursor: pointer;
     margin: 7vh;
+    transition: all 0.3s ease;
 }
 
 .duvidas_marmitas {
@@ -604,11 +583,15 @@ td {
     width: 650px;
     height: auto;
 }
+.sub-duvida{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-.txt {
+.txt{
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 #botao-duvidas {
@@ -631,6 +614,7 @@ td {
     color: whitesmoke;
     margin-top: 2vh;
     cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 .sobre {
@@ -670,7 +654,7 @@ td {
     padding-bottom: 2rem;
 }
 
-.card3 a{
+.card3 a {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -678,19 +662,19 @@ td {
     margin-bottom: 10vh;
 }
 
-.txt-1{
+.txt-1 {
     margin-top: 12vh;
     margin-bottom: 0;
     text-align: center;
     width: 1000px;
     color: whitesmoke;
-    
+
 }
 
-.txt-1 p{
+.txt-1 p {
     margin-bottom: 0;
 }
 
-.txt-1 h1{
+.txt-1 h1 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
