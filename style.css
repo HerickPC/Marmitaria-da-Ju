@@ -83,16 +83,24 @@ ul {
 
 .card1 {
     display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #575418;
     margin: 0px;
 }
 
 .cardesc {
+    width: 90vw;
+    height: 600px;
     display: flex;
     margin: 10vh;
     border-radius: 10px;
     align-items: center;
     border: 1px solid black;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("https://picsum.photos/500");
+    background-size: cover;
+    justify-content: center;
+    text-align: center;
 }
 
 .conteudo {
@@ -112,23 +120,18 @@ ul {
     color: white;
     font-size: 4rem;
     margin-bottom: 2vh;
+    text-align: ce;
 }
 
 .cardesc p {
     color: white;
-    text-align: justify;
+    text-align: center;
     margin-bottom: 3vh;
-}
-
-.cardesc img {
-    border-radius: 0 10px 10px 0px;
-    width: 750px;
-}
-
-.cardesc p {
     color: white;
-    text-align: justify;
+    text-align: center;
+    margin: auto;
     margin-bottom: 3vh;
+    width: 500px;
 }
 
 a:link,
@@ -141,7 +144,9 @@ a:active {
 
 .intro {
     display: flex;
+    justify-content: center;
     gap: 20px;
+    transition: all 0.3s ease;
 }
 
 .intro a {
@@ -164,7 +169,7 @@ a:active {
     color: white;
     margin-top: 2vh;
     cursor: pointer;
-    transition: all 0.3s ease;
+
 }
 
 .cardesc img {
@@ -182,6 +187,7 @@ a:active {
 .ops {
     display: flex;
     justify-content: space-around;
+    flex-wrap: none;
 }
 
 .op {
@@ -194,13 +200,13 @@ a:active {
     width: 300px;
     height: 300px;
     border-radius: 8px;
+    transition: all 0.2s ease;
 }
 
 .op img:hover {
-    width: 320px;
-    height: 320px;
     border-radius: 8px;
-    transition: all 0.3s ease;
+    transform: scale(1.1) translateY(-10px);
+
 }
 
 .cardesc2 {
@@ -234,7 +240,7 @@ a:active {
 
 .card4 {
     margin: 5vh;
-    height: 400px;
+    height: auto;
 }
 
 .txt2 {
@@ -284,6 +290,7 @@ a:active {
     text-align: center;
     flex-direction: column;
     align-items: center;
+    transition: all 0.3s ease;
 }
 
 .com1 a {
@@ -295,6 +302,7 @@ a:active {
     color: whitesmoke;
     margin-top: 2vh;
     cursor: pointer;
+
 }
 
 .com1 a:hover {
@@ -306,7 +314,7 @@ a:active {
     color: whitesmoke;
     margin-top: 2vh;
     cursor: pointer;
-    transition: all 0.3s ease;
+
 }
 
 .tel {
@@ -315,6 +323,8 @@ a:active {
 
 .card6 {
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -346,6 +356,8 @@ a:active {
 .card-rodape {
     display: flex;
     flex-direction: column;
+    height: auto;
+    justify-content: center;
     background-color: #9A6829;
 }
 
@@ -436,6 +448,7 @@ td {
     color: black;
     margin-top: 2vh;
     cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 #botao_marmitas_1:hover {
@@ -447,7 +460,6 @@ td {
     color: whitesmoke;
     margin-top: 2vh;
     cursor: pointer;
-    transition: all 0.3s ease;
 }
 
 .card2-2 {
@@ -461,7 +473,7 @@ td {
     text-align: center;
 }
 
-.card2-2 a{
+.card2-2 a {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -469,11 +481,12 @@ td {
     text-align: center;
 }
 
-.botao{
+.botao {
     display: flex;
     flex-direction: column;
     text-align: center;
     justify-content: center;
+    transition: all 0.3s ease;
 }
 
 .botao a {
@@ -496,10 +509,9 @@ td {
     color: whitesmoke;
     margin-top: 2vh;
     cursor: pointer;
-    transition: all 0.3s ease;
 }
 
-.cardesc-1{
+.cardesc-1 {
     display: flex;
     margin: 10vh;
     border-radius: 10px;
@@ -509,7 +521,7 @@ td {
     text-align: center;
 }
 
-.cardesc-1 a{
+.cardesc-1 a {
     display: flex;
     margin: 10vh;
     border-radius: 10px;
@@ -559,6 +571,7 @@ td {
     cursor: pointer;
     margin: 7vh;
     margin-bottom: 5vh;
+    transition: all 0.3s ease;
 }
 
 #botao_marmitas_2:hover {
@@ -571,7 +584,7 @@ td {
     margin-top: 2vh;
     cursor: pointer;
     margin: 7vh;
-    transition: all 0.3s ease;
+
 }
 
 .duvidas_marmitas {
@@ -583,13 +596,14 @@ td {
     width: 650px;
     height: auto;
 }
-.sub-duvida{
+
+.sub-duvida {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.txt{
+.txt {
     display: flex;
     justify-content: center;
 }
@@ -603,6 +617,7 @@ td {
     color: black;
     margin-top: 2vh;
     cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 #botao-duvidas:hover {
@@ -614,7 +629,7 @@ td {
     color: whitesmoke;
     margin-top: 2vh;
     cursor: pointer;
-    transition: all 0.3s ease;
+
 }
 
 .sobre {
@@ -677,4 +692,116 @@ td {
 
 .txt-1 h1 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.opcoes-carrinho {
+    display: flex;
+    flex-direction: column;
+    margin: 12vh;
+    align-items: center;
+}
+
+fieldset {
+    width: 300px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+}
+
+button {
+    padding: 1em;
+    background-color: darkgreen;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+
+/* Responsividade*/
+
+@media (max-width: 1152px) {
+    .cardesc {
+        width: 90vw;
+    
+    }
+}
+
+@media (max-width: 1300px) {
+
+    .ops {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+
+    }
+
+    .op {
+        width: 90%;
+        max-width: 400px;
+        margin: 2vh;
+    }
+
+}
+
+@media (max-width: 1360px) {
+    .comenta {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        height: auto;
+    }
+
+}
+
+@media (max-width: 1230px) {
+    .map{
+        justify-content: center;
+        width: 50vw;
+        height: auto;
+        margin-right: 10vh;
+        margin-left: 3vh;
+    }
+    .cardesc4{
+        margin: 10vh;
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .map{
+        justify-content: center;
+        width: auto;
+        height: auto;
+        margin-right: 5vh;
+        margin-left: 3vh;
+    }
+      .cardesc4{
+        margin: 5vh;
+    }
+}
+
+@media (max-width: 900px) {
+    .map {
+        display: none !important;
+    }
+    }
+      .cardesc4{
+        margin: 5vh;
+}
+
+@media (max-width: 600px) {
+
+.card7{
+    height: auto;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+}
+hr{
+    width: 50vw;
+}
+
 }

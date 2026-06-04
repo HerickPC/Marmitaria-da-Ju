@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Marmita da Ju</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="cabeca">
+        <nav class="navegacao">
+            <section class="logo">
+                <a href="./index.html"><Img src="/Imagens//logo_marmitaria_sem_colher.png" alt="logo"></a>
+                <article class="mainnav">
+                    <ul class="li1">
+                        <a href="/marmitas.html">
+                            <li> Marmitas </li>
+                        </a>
+                        <a href="/paes.html">
+                            <li> Pães </li>
+                        </a>
+                        <a href="/sobremesas.html">
+                            <li> Sobremesas</li>
+                        </a>
+                        <a href="/index.html#contato">
+                            <li> Contato</li>
+                        </a>
+                        <a href="/sobre.html">
+                            <li> Sobre</li>
+                        </a>
+                    </ul>
+                    <ul class="li2">
+                        <li> Pedir </li>
+                    </ul>
+            </section>
+        </nav>
+    </header>
+    <main>
+    <section class="opcoes-carrinho">
+      <form action="https://wa.me/5511999999999" id="contato-whatsapp">
+        <fieldset>
+            <legend>Contato</legend>
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" required>
+
+            <label for="categoria-marmitas">Marmitas</label>
+            <select id="categoria-marmitas" required>
+                <option>Selecione uma categoria</option>    
+                <option value="Bife à Milanesa">Bife à Milanesa</option>
+                <option value="Filé de Frango Acebolado">Filé de Frango Acebolado</option>
+                <option value="Filé de Frango a Milanesa">Filé de Frango a Milanesa</option>
+                <option value="Toscana Acebolada">Toscana Acebolada</option>
+                <option value="Calabresa Acebolada">Calabresa Acebolada</option>
+                <option value="Feijão Completo">Feijão Completo</option>
+            </select>
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" required></textarea>
+        </fieldset>
+
+
+        <input type="hidden" name="text" value="" id="mensagem-completa" >
+        <button type="button" onclick="enviarMensagem()">Enviar mensagem</button>
+
+    </form>
+    </section>
+    <script src="script.js"></script>
+    </main>
+    </body>
