@@ -9,32 +9,24 @@
 </head>
 
 <body>
-    <header class="cabeca">
+       <header class="cabeca">
         <nav class="navegacao">
-            <section class="logo">
-                <a href="./index.html"><Img src="/Imagens//logo_marmitaria_sem_colher.png" alt="logo"></a>
-                <article class="mainnav">
-                    <ul class="li1">
-                        <a href="/marmitas.html">
-                            <li> Marmitas </li>
-                        </a>
-                        <a href="/paes.html">
-                            <li> Pães </li>
-                        </a>
-                        <a href="/sobremesas.html">
-                            <li> Sobremesas</li>
-                        </a>
-                        <a href="/index.html#contato">
-                            <li> Contato</li>
-                        </a>
-                        <a href="/sobre.html">
-                            <li> Sobre</li>
-                        </a>
-                    </ul>
-                    <ul class="li2">
-                        <li> Pedir </li>
-                    </ul>
-            </section>
+            <div class="logo">
+                <a href="./index.html"><img src="Imagens/logo_marmitaria_sem_colher.png" alt="Logo Marmitaria da Ju"></a>
+            </div>
+            <button id="burguer-menu" class="material-symbols-outlined" aria-label="Abrir menu" aria-expanded="false" onclick="clickMenu()"> keyboard_arrow_down </button>
+            <div class="mainnav" id="itens">
+                <ul class="li1">
+                    <li><a href="/marmitas.html">Marmitas</a></li>
+                    <li><a href="/paes.html">Pães</a></li>
+                    <li><a href="/sobremesas.html">Sobremesas</a></li>
+                    <li><a href="/index.html#contato">Contato</a></li>
+                    <li><a href="/sobre.html">Sobre</a></li>
+                </ul>
+                <ul class="li2">
+                    <li><a href="/carrinho.html">Pedir</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
     <main>
@@ -67,4 +59,13 @@
     </section>
     <script src="script.js"></script>
     </main>
-    </body>
+    <script>
+        function clickMenu() {
+            const itens = document.getElementById('itens');
+            const botao = document.getElementById('burguer-menu');
+            itens.classList.toggle('open');
+            botao.setAttribute('aria-expanded', itens.classList.contains('open'));
+        }
+    </script>
+</body>
+</html>

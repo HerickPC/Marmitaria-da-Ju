@@ -5,36 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Marmita da Ju</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=keyboard_arrow_down" />
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header class="cabeca">
         <nav class="navegacao">
-            <section class="logo">
-                <a href="./index.html"><Img src="/Imagens//logo_marmitaria_sem_colher.png" alt="logo"></a>
-                <article class="mainnav">
-                    <ul class="li1">
-                        <a href="/marmitas.html">
-                            <li> Marmitas </li>
-                        </a>
-                        <a href="/paes.html">
-                            <li> Pães </li>
-                        </a>
-                        <a href="/sobremesas.html">
-                            <li> Sobremesas</li>
-                        </a>
-                        <a href="/index.html#contato">
-                            <li> Contato</li>
-                        </a>
-                        <a href="/sobre.html">
-                            <li> Sobre</li>
-                        </a>
-                    </ul>
-                    <ul class="li2">
-                        <a href="/carrinho.html"><li> Pedir </li></a>
-                    </ul>
-            </section>
+            <div class="logo">
+                <a href="./index.html"><img src="Imagens/logo_marmitaria_sem_colher.png" alt="Logo Marmitaria da Ju"></a>
+            </div>
+            <button id="burguer-menu" class="material-symbols-outlined" aria-label="Abrir menu" aria-expanded="false" onclick="clickMenu()"> keyboard_arrow_down </button>
+            <div class="mainnav" id="itens">
+                <ul class="li1">
+                    <li><a href="/marmitas.html">Marmitas</a></li>
+                    <li><a href="/paes.html">Pães</a></li>
+                    <li><a href="/sobremesas.html">Sobremesas</a></li>
+                    <li><a href="/index.html#contato">Contato</a></li>
+                    <li><a href="/sobre.html">Sobre</a></li>
+                </ul>
+                <ul class="li2">
+                    <li><a href="/carrinho.html">Pedir</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 
@@ -171,6 +164,14 @@
             <p>© 2026 Marmitaria da Ju. Todos os direitos reservados.</p>
         </div>
     </footer>
+    <script>
+        function clickMenu() {
+            const itens = document.getElementById('itens');
+            const botao = document.getElementById('burguer-menu');
+            itens.classList.toggle('open');
+            botao.setAttribute('aria-expanded', itens.classList.contains('open'));
+        }
+    </script>
 </body>
 
 </html>

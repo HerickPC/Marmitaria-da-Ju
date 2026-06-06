@@ -9,6 +9,7 @@ body {
 }
 
 ul {
+    text-align: center;
     font-size: 1.3rem;
 }
 
@@ -29,6 +30,7 @@ ul {
 .navegacao {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: 0px;
     border: 0px;
 }
@@ -36,6 +38,7 @@ ul {
 .logo {
     display: flex;
     justify-content: space-between;
+    text-align: center;
 }
 
 .logo img {
@@ -50,25 +53,47 @@ ul {
 
 .mainnav {
     display: flex;
+    align-items: center;
+    gap: 2rem;
     justify-content: space-between;
-    margin: 3vh;
-    margin-top: 3vh;
+    margin-left: 5vh;
+}
+
+#burguer-menu {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2.4rem;
+    cursor: pointer;
+    color: #000;
 }
 
 .mainnav ul {
     display: flex;
-    gap: 30px;
+    gap: 1rem;
     list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
-.li1 {
-    cursor: pointer;
+.mainnav li a {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    border-radius: 6px;
+    color: #000;
+    text-decoration: none;
+    transition: background-color 0.2s ease, color 0.2s ease;
 }
 
+.mainnav li a:hover {
+    background-color: #C18234;
+    color: #fff;
+}
 
+.li1,
 .li2 {
-    margin-left: 90vh;
-    cursor: pointer;
+    margin: 0;
 }
 
 .loginnav {
@@ -193,7 +218,7 @@ a:active {
 .op {
     display: flex;
     flex-direction: column;
-    margin: 10vh;
+    margin: 5vh;
 }
 
 .op img {
@@ -206,7 +231,10 @@ a:active {
 .op img:hover {
     border-radius: 8px;
     transform: scale(1.1) translateY(-10px);
+}
 
+.op p {
+    width: 300px;
 }
 
 .cardesc2 {
@@ -302,6 +330,7 @@ a:active {
     color: whitesmoke;
     margin-top: 2vh;
     cursor: pointer;
+    align-items: center;
 
 }
 
@@ -465,7 +494,7 @@ td {
 .card2-2 {
     display: flex;
     flex-direction: column;
-    margin: 12vh;
+    margin: 5vh;
     padding: 0px;
     background-color: #FCF1E4;
     align-items: center;
@@ -606,6 +635,7 @@ td {
 .txt {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 #botao-duvidas {
@@ -678,12 +708,15 @@ td {
 }
 
 .txt-1 {
+    display: flex;
+    flex-direction: column;
     margin-top: 12vh;
     margin-bottom: 0;
     text-align: center;
     width: 1000px;
     color: whitesmoke;
-
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .txt-1 p {
@@ -718,13 +751,30 @@ button {
     border-radius: 5px;
 }
 
-
 /* Responsividade*/
 
 @media (max-width: 1152px) {
+
+    .txt-1 {
+        width: 800px;
+    }
+
     .cardesc {
         width: 90vw;
-    
+    }
+
+    .cardesc2 h2 {
+        margin: 5vh;
+        margin-bottom: 1vh;
+    }
+
+    .cardesc2 p {
+        margin: 5vh;
+        margin-bottom: 1vh;
+    }
+
+    .cardesc2 img {
+        display: none;
     }
 }
 
@@ -734,14 +784,14 @@ button {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-
     }
 
-    .op {
-        width: 90%;
-        max-width: 400px;
-        margin: 2vh;
+    .ops img {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
     }
+
 
 }
 
@@ -753,55 +803,165 @@ button {
         gap: 20px;
         height: auto;
     }
+}
 
+@media (max-width: 1370px) {
+
+    .cardesc2 h2 {
+        margin: 5vh;
+        margin-bottom: 1vh;
+    }
+
+    .cardesc2 p {
+        margin: 5vh;
+        margin-bottom: 1vh;
+    }
+
+    .cardesc2 img {
+        border-radius: 10px 10px 10px 10px;
+        margin: 2vh;
+        margin-bottom: 5vh;
+        width: 500px;
+    }
+
+    .sobre img {
+        width: 40px;
+        display: flex;
+        margin: 2vh;
+        padding-bottom: 12vh;
+    }
 }
 
 @media (max-width: 1230px) {
-    .map{
+    .map {
         justify-content: center;
         width: 50vw;
         height: auto;
         margin-right: 10vh;
         margin-left: 3vh;
     }
-    .cardesc4{
+
+    .cardesc4 {
         margin: 10vh;
     }
 }
 
 @media (max-width: 1000px) {
 
-    .map{
+    .map {
         justify-content: center;
         width: auto;
         height: auto;
         margin-right: 5vh;
         margin-left: 3vh;
     }
-      .cardesc4{
+
+    .cardesc4 {
         margin: 5vh;
+    }
+}
+
+@media (max-width: 750px) {
+    .duvidas_marmitas {
+        width: 500px;
+        text-align: justify;
+        flex-wrap: wrap;
+        align-self: center;
+    }
+
+    .duvidas_marmitas p,
+    h1 {
+        margin-bottom: 2vh;
     }
 }
 
 @media (max-width: 900px) {
+     .navegacao {
+        flex-wrap: wrap;
+    }
+
+    #burguer-menu {
+        display: flex;
+    }
+
+    .mainnav {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        display: none;
+        background-color: #e9d5bf;
+        padding: 1rem 0;
+        margin-left: 12vh;
+    }
+
+    .mainnav.open {
+        display: flex;
+    }
+
+    .mainnav ul {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .mainnav li a {
+        justify-content: center;
+        width: 100%;
+        padding: 0.75rem 0;
+    }
+
+    .li2 {
+        margin-left: 0;
+    }
+
+
+    .txt-1 {
+        width: 580px;
+    }
+
     .map {
         display: none !important;
     }
-    }
-      .cardesc4{
+
+
+    .cardesc4 {
         margin: 5vh;
+    }
 }
 
 @media (max-width: 600px) {
+  
 
-.card7{
-    height: auto;
-    flex-wrap: wrap;
-    display: flex;
-    flex-direction: column;
-}
-hr{
-    width: 50vw;
-}
+    .card7 {
+        height: auto;
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: column;
+    }
+
+    hr {
+        width: 50vw;
+    }
+
+    .duvidas_marmitas {
+        width: 450px;
+        flex-wrap: wrap;
+        align-self: center;
+    }
+
+    .duvidas_marmitas p {
+        width: 450px;
+        text-align: justify;
+        flex-wrap: wrap;
+        align-self: center;
+    }
+
+    .duvidas_marmitas p,
+    h1 {
+        margin-bottom: 2vh;
+    }
+
+    .com1 p {
+        width: 400px;
+    }
 
 }
