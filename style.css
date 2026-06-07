@@ -550,6 +550,7 @@ td {
     border: 1px solid black;
     justify-content: center;
     text-align: center;
+    width: 100%;
 }
 
 .cardesc-1 a {
@@ -636,6 +637,7 @@ td {
 
 .txt {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -804,6 +806,10 @@ button {
 
 @media (max-width: 1300px) {
 
+    .cardesc-1 {
+        width: 70%;
+    }
+
     .ops {
         display: flex;
         flex-wrap: wrap;
@@ -815,8 +821,6 @@ button {
         flex-wrap: wrap;
         align-items: center;
     }
-
-
 }
 
 @media (max-width: 1360px) {
