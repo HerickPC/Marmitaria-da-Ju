@@ -60,7 +60,7 @@ ul {
     width: 1400px;
 }
 
-.mainnav .li1{
+.mainnav .li1 {
     display: flex;
 }
 
@@ -604,6 +604,7 @@ td {
     margin: 7vh;
     margin-bottom: 5vh;
     transition: all 0.3s ease;
+    align-self: center;
 }
 
 #botao_marmitas_2:hover {
@@ -616,7 +617,7 @@ td {
     margin-top: 2vh;
     cursor: pointer;
     margin: 7vh;
-
+    align-self: center;
 }
 
 .duvidas_marmitas {
@@ -731,56 +732,114 @@ td {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
-.opcoes-carrinho {
+.opcoes_carrinho {
     display: flex;
     flex-direction: column;
-    margin: 12vh;
+    margin: 15vh;
     align-items: center;
+    color:black;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    margin: 5vh;
+    padding: 0vh;
+    align-items:left;
+    color:black;
+}
+
+.marmitas_opcoes {
+    display: flex;
+    flex-direction: column;
+}
+
+.marmitas_prato {
+    display: flex;
+    align-items: center;
+    width: 400px; /* ajuste conforme necessário */
+    margin-bottom: 10px;
+}
+
+.marmitas_prato select {
+    margin-left: auto;
+}
+
+#mensagem{
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.marmita1{
+    display: flex;
+    justify-content: space-between;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
 }
 
 fieldset {
-    width: 300px;
-    display: grid;
+    width: 800px;
+    display: grip;
     grid-template-rows: 1fr 1fr;
-    align-items: center;
     justify-content: center;
     padding: 1em;
+    border: 1px solid black;
+    border-radius: 10px; 
 }
 
 button {
     padding: 1em;
+    margin-top: 1em;
     background-color: darkgreen;
     color: white;
     border: none;
     border-radius: 5px;
 }
 
+#nome{
+    width: 750px;
+    height: 30px;
+    margin-bottom: 2vh;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+
 /* Responsividade*/
 
 @media (max-width: 1610px) {
-    .mainnav{
-    width: 1300px;
-}
+    .mainnav {
+        width: 1300px;
+    }
 }
 
 @media (max-width: 1510px) {
-    .mainnav{
-    width: 1200px;
-}
+    .mainnav {
+        width: 1200px;
+    }
 }
 
 @media (max-width: 1410px) {
-    .mainnav{
-    width: 1100px;
-}
+    .mainnav {
+        width: 1100px;
+    }
+
+    .cardesc-1 {
+        width: 90%;
+    }
 }
 
 @media (max-width: 1152px) {
 
-    .mainnav{
-    width: 800px;
+    .mainnav {
+        width: 800px;
     }
-    
+
     .txt-1 {
         width: 800px;
     }
@@ -807,7 +866,29 @@ button {
 @media (max-width: 1300px) {
 
     .cardesc-1 {
-        width: 70%;
+        width: 85%;
+    }
+
+}
+
+@media (max-width: 1360px) {
+
+    .cardesc-1 img {
+        border-radius: 10px;
+        width: 300px;
+        margin: 2vh;
+    }
+
+    .cardesc-1 p {
+        margin: 2vh;
+    }
+
+    .cardesc-1 h1 {
+        margin: 2vh;
+    }
+
+    .cardesc-1 table {
+        margin: 2vh;
     }
 
     .ops {
@@ -821,14 +902,24 @@ button {
         flex-wrap: wrap;
         align-items: center;
     }
-}
 
-@media (max-width: 1360px) {
-
-    .mainnav{
-    width: 1000px;
+    #botao_marmitas_2 {
+        width: 200px;
+        height: 50px;
+        margin: 2vh;
+        transition: all 0.3s ease;
     }
-    
+
+    #botao_marmitas_2:hover {
+        width: 200px;
+        height: 50px;
+        margin: 2vh;
+    }
+
+    .mainnav {
+        width: 1000px;
+    }
+
     .comenta {
         display: flex;
         flex-wrap: wrap;
@@ -867,10 +958,10 @@ button {
 
 @media (max-width: 1230px) {
 
-    .mainnav{
-    width: 900px;
+    .mainnav {
+        width: 900px;
     }
-    
+
     .map {
         justify-content: center;
         width: 50vw;
@@ -886,14 +977,46 @@ button {
 
 
 @media (max-width: 1100px) {
-    .mainnav{
-    width: 800px;
+    .mainnav {
+        width: 800px;
     }
+
+    .cardesc-1 {
+        flex-direction: column;
+    }
+
+    .cardesc-1 h1 {
+        color: whitesmoke;
+        font-size: 3rem;
+        margin-bottom: 2vh;
+        margin: 7vh;
+    }
+
+    .cardesc-1 table {
+        color: whitesmoke;
+        margin: 2vh;
+    }
+
+    .cardesc-1 p {
+        color: whitesmoke;
+        text-align: center;
+        margin: 7vh;
+        margin-bottom: 7vh;
+        margin-top: 2vh;
+        width: 250px;
+    }
+
+    .cardesc-1 img {
+        border-radius: 10px;
+        width: 500px;
+        margin: 3vh;
+    }
+
 }
 
 @media (max-width: 1000px) {
-     .mainnav{
-    width: 700px;
+    .mainnav {
+        width: 700px;
     }
 
     .map {
@@ -924,7 +1047,7 @@ button {
 }
 
 @media (max-width: 900px) {
-     .navegacao {
+    .navegacao {
         flex-wrap: wrap;
     }
 
@@ -977,9 +1100,7 @@ button {
     }
 }
 
-@media (max-width: 600px) {
-  
-
+@media (max-width: 630px) {
     .card7 {
         height: auto;
         flex-wrap: wrap;
@@ -1013,4 +1134,9 @@ button {
         width: 400px;
     }
 
+    .cardesc-1 img {
+        border-radius: 10px;
+        width: 300px;
+        margin: 3vh;
+    }
 }
