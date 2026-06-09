@@ -57,7 +57,7 @@ ul {
     gap: 2rem;
     justify-content: space-between;
     margin-left: 5vh;
-    width: 1400px;
+    width: 1400px;  
 }
 
 .mainnav .li1 {
@@ -289,7 +289,7 @@ a:active {
     width: 400px;
     height: 200px;
     padding-inline: 20px;
-    background-color: whitesmoke;
+    background-color: white;
     box-sizing: border-box;
 }
 
