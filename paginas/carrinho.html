@@ -7,28 +7,28 @@
     <title> Marmita da Ju</title>
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=keyboard_arrow_down">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
     <header class="cabeca">
         <nav class="navegacao">
             <div class="logo">
-                <a href="./index.html"><img src="imagens/logo_marmitaria_sem_colher.png"
+                <a href="../index.html"><img src="../imagens/logo_marmitaria_sem_colher.png"
                         alt="Logo Marmitaria da Ju"></a>
             </div>
             <button id="burguer-menu" class="material-symbols-outlined" aria-label="Abrir menu" aria-expanded="false"
                 onclick="clickMenu()"> keyboard_arrow_down </button>
             <div class="mainnav" id="itens">
                 <ul class="li1">
-                    <li><a href="/marmitas.html">Marmitas</a></li>
-                    <li><a href="/paes.html">Pães</a></li>
-                    <li><a href="/sobremesas.html">Sobremesas</a></li>
+                    <li><a href="/paginas/marmitas.html">Marmitas</a></li>
+                    <li><a href="/paginas/paes.html">Pães</a></li>
+                    <li><a href="/paginas/sobremesas.html">Sobremesas</a></li>
                     <li><a href="/index.html#contato">Contato</a></li>
-                    <li><a href="/sobre.html">Sobre</a></li>
+                    <li><a href="/paginas/sobre.html">Sobre</a></li>
                 </ul>
                 <ul class="li2">
-                    <li><a href="/carrinho.html">Pedir</a></li>
+                    <li><a href="/paginas/carrinho.html">Pedir</a></li>
                 </ul>
             </div>
         </nav>
@@ -159,23 +159,29 @@
                 <button type="button" onclick="enviarMensagem()">Enviar mensagem</button>
             </form>
         </div>
-        <script src="script.js"></script>
+        <script src="../script.js"></script>
     </main>
-    <footer class="card-rodape">
+   <footer class="card-rodape">
         <div class="card7">
-            <img src="/Imagens/logo_marmitaria_sem_colher.png" alt="Logo">
-            <div class="op1">
-                <h1> Cardápio </h1>
-                <a href="/marmitas.html"> Marmitas</a>
-                <a href="/paes.html"> Pães </a>
-                <a href="/sobremesas.html">Sobremesas</a>
-                <a href="/index.html#contato"> Contato</a>
+            <img src="../imagens/logo_marmitaria_sem_colher.png" alt="Logo">
+            <div class="rodape-coluna">
+                <h2> Cardápio </h2>
+                <ul>
+                <li><a href="/paginas/marmitas.html"> Marmitas</a></li>
+                <li><a href="/paginas/paes.html"> Pães </a></li>
+                <li><a href="/paginas/sobremesas.html">Sobremesas</a></li>
+                <li><a href="/index.html#contato"> Contato</a></li>
+                </ul>
             </div>
-            <div class="op1">
-                <h1> Empresa </h1>
-                <a href="/sobre.html">Sobre</a>
-                <h1> Contato </h1>
-                <p> Whatsapp </p>
+            <div class="rodape-coluna">
+                <h2> Empresa </h2>
+                <ul>
+                <li><a href="/paginas/sobre.html">Sobre</a></li>
+                </ul>
+                <h2> Contato </h2>
+                <ul>
+                <li><p> Whatsapp </p></li>
+                </ul>
             </div>
         </div>
         <hr>

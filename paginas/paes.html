@@ -6,25 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Marmita da Ju</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=keyboard_arrow_down">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
        <header class="cabeca">
         <nav class="navegacao">
             <div class="logo">
-                <a href="./index.html"><img src="imagens/logo_marmitaria_sem_colher.png" alt="Logo Marmitaria da Ju"></a>
+                <a href="../index.html"><img src="../imagens/logo_marmitaria_sem_colher.png" alt="Logo Marmitaria da Ju"></a>
             </div>
             <button id="burguer-menu" class="material-symbols-outlined" aria-label="Abrir menu" aria-expanded="false" onclick="clickMenu()"> keyboard_arrow_down </button>
             <div class="mainnav" id="itens">
                 <ul class="li1">
-                    <li><a href="/marmitas.html">Marmitas</a></li>
-                    <li><a href="/paes.html">Pães</a></li>
-                    <li><a href="/sobremesas.html">Sobremesas</a></li>
+                    <li><a href="/paginas/marmitas.html">Marmitas</a></li>
+                    <li><a href="/paginas/paes.html">Pães</a></li>
+                    <li><a href="/paginas/sobremesas.html">Sobremesas</a></li>
                     <li><a href="/index.html#contato">Contato</a></li>
-                    <li><a href="/sobre.html">Sobre</a></li>
+                    <li><a href="/paginas/sobre.html">Sobre</a></li>
                 </ul>
                 <ul class="li2">
-                    <li><a href="/carrinho.html">Pedir</a></li>
+                    <li><a href="/paginas/carrinho.html">Pedir</a></li>
                 </ul>
             </div>
         </nav>
@@ -35,50 +35,56 @@
             <h1> Pães </h1>
             <p> Feito com ingredientes frescos e muito carinho </p>
         </div>
-        <section class="ops">
-            <section class="op">
-                <a href="/carrinho.html"><img src="/imagens/paes/pao-leite.png" alt="Prato-Bife-Milanesa"></a>
+        <div class="ops">
+            <article class="op">
+                <a href="/paginas/carrinho.html"><img src="../imagens/paes/pao-leite.png" alt="Prato-Bife-Milanesa"></a>
                 <div>
                     <h2>Pão de Campanha (Sourdough)</h2>
                     <p>Pão de fermentação natural com casca crocante e miolo aerado. Sabor levemente ácido que harmoniza perfeitamente com queijos e vinhos.</p>
                     <p>R$22,00</p>
                 </div>
-            </section>
-            <section class="op">
-                <a href="/carrinho.html"><img src="/imagens/paes/pao-australiano.png" alt="Brioche de Milho com Erva-Doce"></a>
+            </article>
+            <article class="op">
+                <a href="/paginas/carrinho.html"><img src="../imagens/paes/pao-australiano.png" alt="Brioche de Milho com Erva-Doce"></a>
                 <div>
                     <h2>Brioche de Milho com Erva-Doce</h2>
                     <p>Versão brasileira do clássico francês. Massa amanteigada e macia, com o toque caseiro do milho e o perfume suave da erva-doce.</p>
                     <p>R$18,00</p>
                 </div>
-            </section>
-            <section class="op">
-                <a href="/carrinho.html"><img src="/imagens/paes/pao-baguete.png" alt="Bagete Recheada com Calabresa e Queijo"></a>
+            </article>
+            <article class="op">
+                <a href="/paginas/carrinho.html"><img src="../imagens/paes/pao-baguete.png" alt="Bagete Recheada com Calabresa e Queijo"></a>
                 <div>
                     <h2>Bagete Recheada</h2>
                     <p>Massa leve e crocante por fora, recheada generosamente com linguiça calabresa defumada e mussarela derretida. Ideal para um lanche rápido.</p>
                     <p>R$15,00</p>
                 </div>
-            </section>
-        </section>
+            </article>
+        </div>
 
     <a href="" id="botao_marmitas_1"> Fazer Pedido </a>
     </section>
-    <footer class="card-rodape">
+   <footer class="card-rodape">
         <div class="card7">
-            <img src="/imagens/logo_marmitaria_sem_colher.png" alt="Logo">
-            <div class="op1">
-                <h1> Cardápio </h1>
-                <a href="/marmitas.html"> Marmitas</a>
-                <a href="/paes.html"> Pães </a>
-                <a href="/sobremesas.html">Sobremesas</a>
-                <a href="/index.html#contato"> Contato</a>
+            <img src="../imagens/logo_marmitaria_sem_colher.png" alt="Logo">
+            <div class="rodape-coluna">
+                <h2> Cardápio </h2>
+                <ul>
+                <li><a href="/paginas/marmitas.html"> Marmitas</a></li>
+                <li><a href="/paginas/paes.html"> Pães </a></li>
+                <li><a href="/paginas/sobremesas.html">Sobremesas</a></li>
+                <li><a href="/index.html#contato"> Contato</a></li>
+                </ul>
             </div>
-            <div class="op1">
-                <h1> Empresa </h1>
-                <a href="/sobre.html">Sobre</a>
-                <h1> Contato </h1>
-                <p> Whatsapp </p>
+            <div class="rodape-coluna">
+                <h2> Empresa </h2>
+                <ul>
+                <li><a href="/paginas/sobre.html">Sobre</a></li>
+                </ul>
+                <h2> Contato </h2>
+                <ul>
+                <li><p> Whatsapp </p></li>
+                </ul>
             </div>
         </div>
         <hr>
@@ -95,3 +101,5 @@
         }
     </script>
 </body>
+
+</html>

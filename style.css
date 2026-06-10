@@ -11,6 +11,7 @@ body {
 ul {
     text-align: center;
     font-size: 1.3rem;
+    list-style: none;
 }
 
 .cabeca {
@@ -239,6 +240,20 @@ a:active {
     width: 300px;
 }
 
+   
+.ops section, .ops article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.op h3 {
+    font-size: 1.5rem; 
+    color: #333; 
+    text-align: center;
+}
+
 .cardesc2 {
     display: flex;
     margin: 10vh;
@@ -410,7 +425,7 @@ hr {
     color: whitesmoke;
 }
 
-.card7 .op1 {
+.card7 .rodape-coluna {
     margin: 5vh;
 }
 
@@ -423,25 +438,43 @@ hr {
     border-radius: 50px;
 }
 
-.op1 {
+.rodape-coluna {
     margin: 10vh;
     cursor: pointer;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    align-items: center;
+    text-align: left;
 }
 
-.op1 a {
+.rodape-coluna a {
     color: whitesmoke;
+    text-align: left;
 }
 
-.op1 h1 {
+.rodape-coluna h2 {
     margin-bottom: 5px;
+    align-self: center;
 }
 
-.op1 img {
+.rodape-coluna img {
     width: 300px;
     height: 300px;
+}
+
+.rodape-coluna li {
+    margin-bottom: 1vh;
+    text-align: left; 
+}
+
+.rodape-coluna ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+
 }
 
 table {
@@ -570,6 +603,12 @@ td {
     margin-bottom: 2vh;
     margin: 7vh;
 }
+.cardesc-1 h2 {
+    color: whitesmoke;
+    font-size: 3rem;
+    margin-bottom: 2vh;
+    margin: 7vh;
+}
 
 .cardesc-1 table {
     color: whitesmoke;
@@ -641,6 +680,9 @@ td {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.txt h2 {
+   font-size: 2rem;
 }
 
 #botao-duvidas {
