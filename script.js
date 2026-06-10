@@ -9,7 +9,7 @@ function enviarMensagem() {
     let pedido = "";
     //declarar a variável pedido para armazenar os itens selecionados e suas quantidades
 
-    const marmitas = document.querySelectorAll(".marmitas_prato");
+    const marmitas = document.querySelectorAll(".marmitas_item");
 
     marmitas.forEach(item => {
         const checkbox = item.querySelector('input[type="checkbox"]');
@@ -46,7 +46,7 @@ ${pedido}
 📝 Observações:
 ${mensagem.value}`;
 
-    const telefone = "+551199999999"; 
+    const telefone = "+5515998046007"; 
 
     const url = `https://wa.me/${telefone}?text=${encodeURIComponent(texto)}`;
 

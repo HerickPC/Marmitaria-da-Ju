@@ -754,6 +754,13 @@ td {
     flex-direction: column;
 }
 
+.marmitas_item {
+    display: flex;
+    align-items: center; /* Alinha verticalmente no centro */
+    gap: 15px;           /* Cria um espaço entre o prato e o select */
+    margin-bottom: 12px; /* Dá espaço para o próximo prato abaixo */
+}
+
 .marmitas_prato {
     display: flex;
     align-items: center;
