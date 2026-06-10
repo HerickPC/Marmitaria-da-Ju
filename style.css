@@ -58,7 +58,7 @@ ul {
     gap: 2rem;
     justify-content: space-between;
     margin-left: 5vh;
-    width: 1400px;  
+    width: 1400px;
 }
 
 .mainnav .li1 {
@@ -240,8 +240,9 @@ a:active {
     width: 300px;
 }
 
-   
-.ops section, .ops article {
+
+.ops section,
+.ops article {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -249,8 +250,8 @@ a:active {
 }
 
 .op h3 {
-    font-size: 1.5rem; 
-    color: #333; 
+    font-size: 1.5rem;
+    color: #333;
     text-align: center;
 }
 
@@ -464,7 +465,7 @@ hr {
 
 .rodape-coluna li {
     margin-bottom: 1vh;
-    text-align: left; 
+    text-align: left;
 }
 
 .rodape-coluna ul {
@@ -603,6 +604,7 @@ td {
     margin-bottom: 2vh;
     margin: 7vh;
 }
+
 .cardesc-1 h2 {
     color: whitesmoke;
     font-size: 3rem;
@@ -681,8 +683,9 @@ td {
     justify-content: center;
     align-items: center;
 }
+
 .txt h2 {
-   font-size: 2rem;
+    font-size: 2rem;
 }
 
 #botao-duvidas {
@@ -779,7 +782,7 @@ td {
     flex-direction: column;
     margin: 15vh;
     align-items: center;
-    color:black;
+    color: black;
 }
 
 .formulario {
@@ -787,8 +790,8 @@ td {
     flex-direction: column;
     margin: 5vh;
     padding: 0vh;
-    align-items:left;
-    color:black;
+    align-items: left;
+    color: black;
 }
 
 .marmitas_opcoes {
@@ -798,15 +801,19 @@ td {
 
 .marmitas_item {
     display: flex;
-    align-items: center; /* Alinha verticalmente no centro */
-    gap: 15px;           /* Cria um espaço entre o prato e o select */
-    margin-bottom: 12px; /* Dá espaço para o próximo prato abaixo */
+    align-items: center;
+    /* Alinha verticalmente no centro */
+    gap: 15px;
+    /* Cria um espaço entre o prato e o select */
+    margin-bottom: 12px;
+    /* Dá espaço para o próximo prato abaixo */
 }
 
 .marmitas_prato {
     display: flex;
     align-items: center;
-    width: 400px; /* ajuste conforme necessário */
+    width: 400px;
+    /* ajuste conforme necessário */
     margin-bottom: 10px;
 }
 
@@ -814,12 +821,12 @@ td {
     margin-left: auto;
 }
 
-#mensagem{
+#mensagem {
     border: 1px solid black;
     border-radius: 5px;
 }
 
-.marmita1{
+.marmita1 {
     display: flex;
     justify-content: space-between;
 }
@@ -838,7 +845,7 @@ fieldset {
     justify-content: center;
     padding: 1em;
     border: 1px solid black;
-    border-radius: 10px; 
+    border-radius: 10px;
 }
 
 button {
@@ -850,7 +857,7 @@ button {
     border-radius: 5px;
 }
 
-#nome{
+#nome {
     width: 750px;
     height: 30px;
     margin-bottom: 2vh;
@@ -1068,6 +1075,21 @@ button {
         width: 700px;
     }
 
+    fieldset {
+        margin: auto;
+        width: 500px;
+    }
+
+    .marmitas_item {
+        width: 80%;
+        padding: 1rem;
+    }
+
+    .marmitas_prato {
+        width: 100%;
+        padding: 0;
+    }
+
     .map {
         justify-content: center;
         width: auto;
@@ -1099,6 +1121,22 @@ button {
     .navegacao {
         flex-wrap: wrap;
     }
+
+    #nome{
+        width: auto;
+    }
+
+
+    .formulario{
+        width: 400px;
+    }
+
+
+    .marmitas_item {
+        width: 100%;
+        padding: 1rem;
+    }
+
 
     #burguer-menu {
         display: flex;
@@ -1155,6 +1193,11 @@ button {
         flex-wrap: wrap;
         display: flex;
         flex-direction: column;
+    }
+    .marmitas_opcoes {
+        margin: auto;
+        width: 60%;
+        padding: 1rem;
     }
 
     hr {
