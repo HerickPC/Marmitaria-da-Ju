@@ -11,32 +11,32 @@
 </head>
 
 <body>
-    <header class="cabeca">
+    <header class="cabecario">
         <nav class="navegacao">
             <div class="logo">
-                <a href="./index.html"><img src="imagens/logo_marmitaria_sem_colher.png"
+                <a href="../index.html"><img src="/imagens/logo_marmitaria_sem_colher-removebg-preview.png"
                         alt="Logo Marmitaria da Ju"></a>
             </div>
             <button id="burguer-menu" class="material-symbols-outlined" aria-label="Abrir menu" aria-expanded="false"
                 onclick="clickMenu()"> keyboard_arrow_down </button>
             <div class="mainnav" id="itens">
+
                 <ul class="li1">
                     <li><a href="/paginas/marmitas.html">Marmitas</a></li>
                     <li><a href="/paginas/paes.html">Pães</a></li>
                     <li><a href="/paginas/sobremesas.html">Sobremesas</a></li>
                     <li><a href="/index.html#contato">Contato</a></li>
                     <li><a href="/paginas/sobre.html">Sobre</a></li>
+                    <li class="pedir"><a href="/paginas/carrinho.html">Pedir</a></li>
                 </ul>
-                <ul class="li2">
-                    <li><a href="/paginas/carrinho.html">Pedir</a></li>
-                </ul>
+
             </div>
         </nav>
     </header>
 
     <main>
-        <div class="card1">
-            <div class="cardesc">
+        <div class="card">
+            <div class="hero-card">
                 <article class="conteudo">
                     <h1> Comida caseira feita com amor </h1>
                     <p> Marmitas, pães e sobremesas preparados diariamente com ingredientes selecionados. Sabor
@@ -49,21 +49,21 @@
             </div>
         </div>
 
-        <div class="card2">
+        <div class="menu-card">
             <div class="txt">
                 <h2 id="cardapio">O que oferecemos</h2>
                 <p>Cada prato é feito na hora, sem pressa, sem atalhos. Apenas comida boa como deve ser.</p>
             </div>
 
-            <div class="ops">
-                <article class="op">
+            <div class="cardapio">
+                <article class="prato">
                     <a href="/paginas/marmitas.html"><img src="/imagens/pratos/bife-a-milanesa.png" alt="Marmitas"></a>
                     <div>
                         <h2>Marmitas completas</h2>
                         <p>Refeições balanceadas que saciam e nutrem o corpo.</p>
                     </div>
                 </article>
-                <article class="op">
+                <article class="prato">
                     <a href="/paginas/paes.html"><img src="/imagens/paes/pao-baguete.png" alt="Pães"></a>
                     <div>
                         <h2>Pães artesanais</h2>
@@ -71,7 +71,7 @@
                     </div>
                 </article>
 
-                <article class="op">
+                <article class="prato">
                     <a href="/paginas/sobremesas.html"><img src="/imagens/sobremesas/banoffe.png" alt="Sobremesas"></a>
                     <div>
                         <h2>Sobremesas irresistíveis</h2>
@@ -81,27 +81,27 @@
             </div>
         </div>
         <hr class="retangulo">
-        <section class="card4">
+        <section class="relato-card">
             <div class="txt2">
                 <h2>Clientes satisfeitos</h2>
                 <p>O que dizem sobre nossa comida</p>
             </div>
-            <div class="comenta">
-                <div class="com">
+            <div class="comentarios">
+                <div class="depoimento">
                     <img src="/imagens/icons/stars_11906616.png" alt="Estrelas">
                     <p>"A comida tem o gosto de quem faz com o coração, não é só refeição, é cuidado."</p>
                     <p><strong>Marina Silva </strong></p>
                     <p>Cliente fiel</p>
                 </div>
 
-                <div class="com">
+                <div class="depoimento">
                     <img src="/imagens/icons/stars_11906616.png" alt="Estrelas">
                     <p>"Encontrei aqui o que procurava, comida de verdade, sem artifícios, pura e simples."</p>
                     <p><strong>Carlos Mendes</strong></p>
                     <p>Profissional ocupado</p>
                 </div>
 
-                <div class="com">
+                <div class="depoimento">
                     <img src="/imagens/icons/stars_11906616.png" alt="Estrelas">
                     <p>"Cada marmita é uma surpresa agradável, ingredientes frescos e um sabor que não se esquece."</p>
                     <p><strong>Fernanda Costa</strong>
@@ -111,9 +111,9 @@
             </div>
         </section>
 
-        <section class="card5">
-            <div class="cardesc3">
-                <div class="com1">
+        <section class="card-primeiro-pedido">
+            <div class="content-primeiro-pedido">
+                <div class="pedido">
                     <h2> Faça seu primeiro pedido </h2>
                     <p> Descubra por que tantos escolhem a Marmitaria da Ju para suas refeições diárias. </p>
                     <a href="#cardapio"> Cardápio </a>
@@ -121,18 +121,18 @@
             </div>
         </section>
 
-        <section class="card6" id="contato">
-            <div class="cardesc4">
-                <div class="com2">
+        <section class="card-contato-informacoes" id="contato">
+            <div class="informacoes-contato">
+                <div class="contato">
                     <h2> Entre em contato</h2>
                     <p> Estamos aqui para responder suas dúvidas e receber seus pedidos</p>
                 </div>
 
-                <div class="com2">
+                <div class="contato">
                     <h2> Telefone</h2>
                     <p class="tel">(11) 98765-4321</p>
                 </div>
-                <div class="com2">
+                <div class="contato">
                     <h2> Endereço </h2>
                     <p>Rua das Flores, 456, São Paulo SP Brasil</p>
                 </div>
@@ -145,35 +145,34 @@
             </div>
         </section>
     </main>
-     <footer class="card-rodape">
-        <div class="card7">
+    <footer class="card-rodape">
+        <nav class="navegacao-rodape">
             <img src="../imagens/logo_marmitaria_sem_colher.png" alt="Logo">
-            <div class="rodape-coluna">
+            <div class="rodape-leme">
                 <h2> Cardápio </h2>
                 <ul>
-                <li><a href="/paginas/marmitas.html"> Marmitas</a></li>
-                <li><a href="/paginas/paes.html"> Pães </a></li>
-                <li><a href="/paginas/sobremesas.html">Sobremesas</a></li>
-                <li><a href="/index.html#contato"> Contato</a></li>
+                    <li><a href="/paginas/marmitas.html"> Marmitas</a></li>
+                    <li><a href="/paginas/paes.html"> Pães </a></li>
+                    <li><a href="/paginas/sobremesas.html">Sobremesas</a></li>
+                    <li><a href="/index.html#contato"> Contato</a></li>
                 </ul>
             </div>
-            <div class="rodape-coluna">
-                <h2> Empresa </h2>
-                <ul>
-                <li><a href="/paginas/sobre.html">Sobre</a></li>
-                </ul>
-                <h2> Contato </h2>
-                <ul>
-                <li><p> Whatsapp </p></li>
-                </ul>
+            <div class="rodape-leme" aria-label="Menu institucional">
+                <h2>Empresa</h2>
+                <a href="/paginas/sobre.html">Sobre</a>
+                <h2>Contato</h2>
+                <address>
+                    <a href="https://wa.me/5511999999999" target="_blank">WhatsApp</a>
+                </address>
             </div>
-        </div>
+            </section>
+        </nav>
         <hr>
         <div class="direitos">
             <p>© 2026 Marmitaria da Ju. Todos os direitos reservados.</p>
         </div>
     </footer>
-    <script>
+    <script>x
         function clickMenu() {
             const itens = document.getElementById('itens');
             const botao = document.getElementById('burguer-menu');
