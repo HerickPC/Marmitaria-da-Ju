@@ -11,10 +11,11 @@
 </head>
 
 <body>
-       <header class="cabecario">
+    <header class="cabecario">
         <nav class="navegacao">
             <div class="logo">
-                <a href="/index.html"><img src="/imagens/logo_marmitaria_sem_colher-removebg-preview.png"
+                <!-- Ajustado caminho da imagem com ../ -->
+                <a href="../index.html"><img src="../imagens/logo_marmitaria_sem_colher-removebg-preview.png"
                         alt="Logo Marmitaria da Ju"></a>
             </div>
             <button id="burguer-menu" class="material-symbols-outlined" aria-label="Abrir menu" aria-expanded="false"
@@ -22,15 +23,17 @@
             <div class="mainnav" id="itens">
 
                 <ul class="li1">
-                    <li><a href="/paginas/marmitas.html">Marmitas</a></li>
-                    <li><a href="/paginas/paes.html">Pães</a></li>
-                    <li><a href="/paginas/sobremesas.html">Sobremesas</a></li>
-                    <li><a href="/index.html#contato">Contato</a></li>
-                    <li><a href="/paginas/sobre.html">Sobre</a></li>
-                    <li class="pedir"><a href="/paginas/carrinho.html">Pedir</a></li>
+                    <!-- Ajustados links internos sem o prefixo /paginas/ -->
+                    <li><a href="marmitas.html">Marmitas</a></li>
+                    <li><a href="paes.html">Pães</a></li>
+                    <li><a href="sobremesas.html">Sobremesas</a></li>
+                    <li><a href="../index.html#contato">Contato</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                                    <li class="pedir"><a href="carrinho.html">Pedir</a></li>
                 </ul>
 
             </div>
+        
         </nav>
     </header>
     <main>
@@ -42,7 +45,8 @@
             </div>
             <div class="cardapio">
                 <article class="prato">
-                    <a href="/paginas/carrinho.html"><img src="../imagens/paes/pao-leite.png"
+                    <!-- Links ajustados diretamente para o carrinho.html -->
+                    <a href="carrinho.html"><img src="../imagens/paes/pao-leite.png"
                             alt="Pão de Campanha (Sourdough)"></a>
                     <div>
                         <h2>Pão de Campanha (Sourdough)</h2>
@@ -52,7 +56,7 @@
                     </div>
                 </article>
                 <article class="prato">
-                    <a href="/paginas/carrinho.html"><img src="../imagens/paes/pao-australiano.png"
+                    <a href="carrinho.html"><img src="../imagens/paes/pao-australiano.png"
                             alt="Brioche de Milho com Erva-Doce"></a>
                     <div>
                         <h2>Brioche de Milho com Erva-Doce</h2>
@@ -62,7 +66,7 @@
                     </div>
                 </article>
                 <article class="prato">
-                    <a href="/paginas/carrinho.html"><img src="../imagens/paes/pao-baguete.png"
+                    <a href="carrinho.html"><img src="../imagens/paes/pao-baguete.png"
                             alt="Bagete Recheada com Calabresa e Queijo"></a>
                     <div>
                         <h2>Bagete Recheada</h2>
@@ -73,7 +77,7 @@
                 </article>
             </div>
 
-            <a href="/paginas/carrinho.html" id="botao_marmitas_1"> Fazer Pedido </a>
+            <a href="carrinho.html" id="botao_marmitas_1"> Fazer Pedido </a>
         </section>
     </main>
     <footer class="card-rodape">
@@ -82,23 +86,23 @@
             <nav class="rodape-leme">
                 <h2> Cardápio </h2>
                 <ul>
-                    <li><a href="/paginas/marmitas.html"> Marmitas</a></li>
-                    <li><a href="/paginas/paes.html"> Pães </a></li>
-                    <li><a href="/paginas/sobremesas.html">Sobremesas</a></li>
-                    <li><a href="/index.html#contato"> Contato</a></li>
+                    <!-- Links do rodapé ajustados igualmente -->
+                    <li><a href="marmitas.html"> Marmitas</a></li>
+                    <li><a href="paes.html"> Pães </a></li>
+                    <li><a href="sobremesas.html">Sobremesas</a></li>
+                    <li><a href="../index.html#contato"> Contato</a></li>
                 </ul>
             </nav>
             <nav class="rodape-leme" aria-label="Menu institucional">
                 <h2>Empresa</h2>
                 <ul>
-                    <li><a href="/paginas/sobre.html">Sobre</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
                 </ul>
                 <h2>Contato</h2>
                 <address>
                     <a href="https://wa.me/5511999999999" target="_blank">WhatsApp</a>
                 </address>
             </nav>
-            </section>
         </div>
         <hr>
         <div class="direitos">
