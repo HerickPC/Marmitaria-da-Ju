@@ -11,7 +11,7 @@
 </head>
 
 <body>
-       <header class="cabecario">
+    <header class="cabecario">
         <nav class="navegacao">
             <div class="logo">
                 <a href="../index.html"><img src="/imagens/logo_marmitaria_sem_colher-removebg-preview.png"
@@ -43,123 +43,133 @@
                     <div class="formulario">
                         <label for="nome" id="name">Nome</label>
                         <input type="text" id="nome" required>
-
                         <div class="marmitas_opcoes">
-                            <h1>Marmitas</h1>
 
-                            <!-- Item 1 -->
+                            <div class="categoria">
+                                <img src="/Imagens/Icons/icone-marmitas.png" alt="">
+                                <div>
+                                    <h2>Marmitas</h2>
+                                    <span>Refeições completas, com acompanhamento.</span>
+                                </div>
+                            </div>
+
                             <div class="marmitas_item">
                                 <label class="marmitas_prato">
-                                    <input type="checkbox" name="marmita" value="Bife à Milanesa"> Bife à Milanesa
+                                    <input type="checkbox" name="marmita" value="Bife à Milanesa">
+
+                                    <div class="descricao_prato">
+                                        <h4>Bife à Milanesa</h4>
+                                        <p>Arroz, feijão e salada</p>
+                                    </div>
                                 </label>
-                                <select class="quantidade" name="quantidade" required>
-                                    <option value="" disabled selected>Selecione a Qtd</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                    <option value="6">6</option>
-                                    <option value="7">7</option>
+
+                                <select class="quantidade">
+                                    <option>Qtd.</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
                                 </select>
                             </div>
 
-                            <!-- Item 2 -->
                             <div class="marmitas_item">
                                 <label class="marmitas_prato">
-                                    <input type="checkbox" name="marmita" value="Bife à Milanesa"> Bife à Milanesa
+                                    <input type="checkbox" name="marmita" value="Frango Grelhado">
+
+                                    <div class="descricao_prato">
+                                        <h4>Frango Grelhado</h4>
+                                        <p>Arroz, feijão e legumes</p>
+                                    </div>
                                 </label>
-                                <select class="quantidade" name="quantidade" required>
-                                    <option value="" disabled selected>Selecione a Qtd</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                    <option value="6">6</option>
-                                    <option value="7">7</option>
+
+                                <select class="quantidade">
+                                    <option>Qtd.</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
                                 </select>
                             </div>
 
-                            <!-- Item 3 -->
+                        </div>
+
+                        <!-- SOBREMESAS -->
+                        <div class="marmitas_opcoes">
+
+                            <div class="categoria">
+                                <img src="../Imagens/Icons/icone-sobremesas.png" alt="">
+                                <div>
+                                    <h2>Sobremesas</h2>
+                                    <span>Doces feitos com carinho.</span>
+                                </div>
+                            </div>
+
                             <div class="marmitas_item">
                                 <label class="marmitas_prato">
-                                    <input type="checkbox" name="marmita" value="Bife à Milanesa"> Bife à Milanesa
+                                    <input type="checkbox">
+
+                                    <div class="descricao_prato">
+                                        <h4>Banoffe</h4>
+                                        <p>Banana, doce de leite e chantilly.</p>
+                                    </div>
                                 </label>
-                                <select class="quantidade" name="quantidade" required>
-                                    <option value="" disabled selected>Selecione a Qtd</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                    <option value="6">6</option>
-                                    <option value="7">7</option>
+
+                                <select class="quantidade">
+                                    <option>Qtd.</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
                                 </select>
                             </div>
 
-                            <!-- Item 4 -->
+                        </div>
+
+                        <!-- PÃES -->
+                        <div class="marmitas_opcoes">
+
+                            <div class="categoria">
+                                <img src="../imagens/Icons/icone-paes.png" alt="">
+                                <div>
+                                    <h2>Pães</h2>
+                                    <span>Produção artesanal.</span>
+                                </div>
+                            </div>
+
                             <div class="marmitas_item">
                                 <label class="marmitas_prato">
-                                    <input type="checkbox" name="marmita" value="Bife à Milanesa"> Bife à Milanesa
+                                    <input type="checkbox">
+
+                                    <div class="descricao_prato">
+                                        <h4>Pão de Leite</h4>
+                                        <p>Macio e saboroso.</p>
+                                    </div>
                                 </label>
-                                <select class="quantidade" name="quantidade" required>
-                                    <option value="" disabled selected>Selecione a Qtd</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                    <option value="6">6</option>
-                                    <option value="7">7</option>
+
+                                <select class="quantidade">
+                                    <option>Qtd.</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
                                 </select>
                             </div>
 
-                            <!-- Item 5 -->
-                            <div class="marmitas_item">
-                                <label class="marmitas_prato">
-                                    <input type="checkbox" name="marmita" value="Bife à Milanesa"> Bife à Milanesa
-                                </label>
-                                <select class="quantidade" name="quantidade" required>
-                                    <option value="" disabled selected>Selecione a Qtd</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                    <option value="6">6</option>
-                                    <option value="7">7</option>
-                                </select>
-                            </div>
+                        </div>
 
-                            <!-- Item 6 -->
-                            <div class="marmitas_item">
-                                <label class="marmitas_prato">
-                                    <input type="checkbox" name="marmita" value="Bife à Milanesa"> Bife à Milanesa
-                                </label>
-                                <select class="quantidade" name="quantidade" required>
-                                    <option value="" disabled selected>Selecione a Qtd</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                    <option value="6">6</option>
-                                    <option value="7">7</option>
-                                </select>
-                            </div>
-                        </div> <!-- Fim de .marmitas_opcoes -->
-                        <label for="mensagem">Mensagem</label>
-                        <textarea id="mensagem" required></textarea>
+                        <label for="mensagem">Observações</label>
+
+                        <textarea id="mensagem" placeholder="Ex: sem cebola, entregar às 12h..."></textarea>
+
+                        <button type="button" onclick="enviarMensagem()">
+                            Enviar pedido
+                        </button>
+
                     </div>
-                </fieldset>
-                <input type="hidden" name="text" value="" id="mensagem-completa">
-                <button type="button" onclick="enviarMensagem()">Enviar mensagem</button>
+
             </form>
+        </div>
+        </form>
         </div>
         <script src="../script.js"></script>
     </main>
-     <footer class="card-rodape">
+    <footer class="card-rodape">
         <div class="navegacao-rodape">
             <img src="../imagens/logo_marmitaria_sem_colher.png" alt="Logo">
             <nav class="rodape-leme">

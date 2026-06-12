@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Marmita da Ju</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=keyboard_arrow_down">
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+        <header class="cabecario">
+        <nav class="navegacao">
+            <div class="logo">
+                <a href="../index.html"><img src="/imagens/logo_marmitaria_sem_colher-removebg-preview.png"
+                        alt="Logo Marmitaria da Ju"></a>
+            </div>
+            <button id="burguer-menu" class="material-symbols-outlined" aria-label="Abrir menu" aria-expanded="false"
+                onclick="clickMenu()"> keyboard_arrow_down </button>
+            <div class="mainnav" id="itens">
+
+                <ul class="li1">
+                    <li><a href="/paginas/marmitas.html">Marmitas</a></li>
+                    <li><a href="/paginas/paes.html">Pães</a></li>
+                    <li><a href="/paginas/sobremesas.html">Sobremesas</a></li>
+                    <li><a href="/index.html#contato">Contato</a></li>
+                    <li><a href="/paginas/sobre.html">Sobre</a></li>
+                    <li class="pedir"><a href="/paginas/carrinho.html">Pedir</a></li>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+    <section class="sobre-card">
+        <div class="txt-1">
+            <h1>A Ju começou porquê acreditava em algo simples</h1>
+            <p>Tudo começou na cozinha de casa, com a vontade de fazer diferente. Ju percebeu que as pessoas queriam
+                comer bem, mas não tinham tempo. Decidiu então transformar essa paixão em um negócio que levasse comida
+                de qualidade para quem realmente se importa com saúde e sabor.</p>
+        </div>
+        <section class="sobre-card-informacoes">
+            <img id="fundadora" src="/imagens/imagem-sobre.png" alt="Fundadora">
+            <div class="sobre">
+                <div class="icons">
+                    <img id="icon-panela" src="../imagens/icons/cooking_3711960.png" alt="Icone Panela">
+                    <img id="icon-cesta" src="../imagens/icons/food-basket_3711475.png" alt=" Icone Cesta">
+                    <img id="icon-relogio" src="../imagens/icons/clock_18414713.png" alt="Icone Relógio">
+                </div>
+                <div>
+                    <h2> Comida fresca</h2>
+                    <p>Preparada todos os dias com cuidado e atenção aos detalhes que fazem diferença.</p>
+                    <h2>Ingredientes selecionados</h2>
+                    <p>Escolhidos com rigor para garantir qualidade e sabor em cada garfada.</p>
+                    <h2>Entrega rápida</h2>
+                    <p>Seu pedido chega quente e pronto para ser desfrutado sem demora.</p>
+                </div>
+            </div>
+        </section>
+        <div class="botao">
+            <a href="../index.html#cardapio"> Cardápio </a>
+        </div>
+    </section>
+
+  <footer class="card-rodape">
+        <nav class="navegacao-rodape">
+            <img src="../imagens/logo_marmitaria_sem_colher.png" alt="Logo">
+            <div class="rodape-leme">
+                <h2> Cardápio </h2>
+                <ul>
+                    <li><a href="/paginas/marmitas.html"> Marmitas</a></li>
+                    <li><a href="/paginas/paes.html"> Pães </a></li>
+                    <li><a href="/paginas/sobremesas.html">Sobremesas</a></li>
+                    <li><a href="/index.html#contato"> Contato</a></li>
+                </ul>
+            </div>
+            <div class="rodape-leme" aria-label="Menu institucional">
+                <h2>Empresa</h2>
+                <a href="/paginas/sobre.html">Sobre</a>
+                <h2>Contato</h2>
+                <address>
+                    <a href="https://wa.me/5511999999999" target="_blank">WhatsApp</a>
+                </address>
+            </div>
+            </section>
+        </nav>
+        <hr>
+        <div class="direitos">
+            <p>© 2026 Marmitaria da Ju. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <script>
+        function clickMenu() {
+            const itens = document.getElementById('itens');
+            const botao = document.getElementById('burguer-menu');
+            itens.classList.toggle('open');
+            botao.setAttribute('aria-expanded', itens.classList.contains('open'));
+        }
+    </script>
+</body>
+
+</html>
